@@ -1,10 +1,10 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import AboutUs from './about-us';
-import FindAHome from './find-a-home';
-import FindAnAgent from './find-an-agent';
-import InfoAndAdvice from './info-and-advice';
-import LandingPage from './landing-page';
+import AboutUs from '../screens/about-us';
+import FindAHome from '../screens/find-a-home';
+import FindAnAgent from '../screens/find-an-agent';
+import InfoAndAdvice from '../screens/info-and-advice';
+import LandingPage from '../screens/landing-page';
 
 const Routes = () => (
     <Switch>
