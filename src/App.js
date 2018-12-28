@@ -7,10 +7,11 @@ import { Link } from 'react-router-dom'
 class App extends Component {
   render() {
     return (
-        <div style={{height: '300px', position: 'relative'}}>
-            <Layout style={{background: 'url(http://www.getmdl.io/assets/demos/transparent.jpg) center / cover'}}>
-                <Header transparent title="real-estate" style={{color: 'white'}}>
+        <div>
+            <Layout>
+                <Header className="header-color" title="real-estate" scroll>
                     <Navigation>
+                        <Link to="/">Home</Link>
                         <Link to="/find-a-home">Find a Home</Link>
                         <Link to="/find-an-agent">Find an Agent</Link>
                         <Link to="/info-and-advice">Info and Advice</Link>
@@ -26,6 +27,7 @@ class App extends Component {
                 </Header>
                 <Drawer title="real-estate">
                     <Navigation>
+                        <Link to="/">Home</Link>
                         <Link to="/find-a-home">Find a Home</Link>
                         <Link to="/find-an-agent">Find an Agent</Link>
                         <Link to="/info-and-advice">Info and Advice</Link>
